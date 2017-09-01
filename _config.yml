@@ -1,21 +1,23 @@
 menu:
-    Blog: /
-    Archive: /archives/
-    Weibo: http://weibo.com/sunchongsheng
-    GitHub: https://github.com/pinggod
-    Rss: /atom.xml
+    首頁: /
+    所有文章: /archives/
+    分類: /categories
+    # 標籤: /tags
+    # GitHub: https://github.com/javaok1987
+    訂閱: /atom.xml
 
 favicon: /favicon.png
 logo: /favicon.png
 
 # Comment
 # e.g disqus: seansun
-disqus:
+disqus: javaok1987
 duoshuo:
+cloudTie:
 
 # Analytics
 # google-analytics:
-ga: UA-65933410-1
+ga: UA-69711228-4
 
 # Copyright Infomation
-startyear: 2015
+startyear: 2017

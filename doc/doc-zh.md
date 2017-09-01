@@ -1,6 +1,6 @@
 ## Meta Description
 
-如果你想设置页面的 meta description 信息，请在每篇 markdown 文件的头部添加 `desc` 字段信息——更实用的方式是在 scaffolds 文件夹中，将 `desc` 配置到常用模板中去，示例如下：
+如果你想設置頁面的meta description 信息，請在每篇markdown 文件的頭部添加`desc` 字段信息——更實用的方式是在scaffolds 文件夾中，將`desc` 配置到常用模板中去，示例如下：
 
 ```md
 title: Lorem ipsum dolor
@@ -11,50 +11,50 @@ desc: Lorem ipsum dolor sit amet, consectetur.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, non numquam saepe ex ut. Deleniti culpa inventore consectetur nam saepe!
 ```
 
-生成结果:
+生成結果:
 
 ```html
 <meta name="description" content="Lorem ipsum dolor sit amet, consectetur.">
 ```
 
-如果没有配置该信息，Hexo-theme-apollo 会使用 `page.title` 和 `page.author` 来配置该标签。
+如果沒有配置該信息，Hexo-theme-apollo 會使用 `page.title` 和 `page.author` 來配置該標籤。
 
-## 标题
+## 標題
 
-实际上，Hexo-theme-apollo 只支持两种标题：`h1~h3` 大标题，`h4~h6` 小标题，也就是说，`#` 和 `###` 的样式是一样的。之所以这么处理，是因为就个人感觉而言，我们不应该为文章设置过多的层级消耗读者的阅读精力。这相当于强制使用 Hexo-theme-apollo 的用户在写文章时注意文章结构，最多只能使用两层结构。
+實際上，Hexo-theme-apollo 只支持兩種標題：`h1~h3` 大標題，`h4~h6` 小標題，也就是說，`#` 和 `###` 的樣式是一樣的。之所以這麼處理，是因為就個人感覺而言，我們不應該為文章設置過多的層級消耗讀者的閱讀精力。這相當於強制使用 Hexo-theme-apollo 的用戶在寫文章時注意文章結構，最多只能使用兩層結構。
 
-另一个潜在的原因是因为我还没有发现好的样式来处理不同层级的标题，单纯以大小和颜色很容易让页面变得混乱和冗杂。如果你有好的建议，请告诉我:)!
+另一個潛在的原因是因為我還沒有發現好的樣式來處理不同層級的標題，單純以大小和顏色很容易讓頁面變得混亂和冗雜。如果你有好的建議，請告訴我:)!
 
 ## 文章摘要
 
-如果你想创建文章摘要用于向读者展示文章的核心内容，那么需要在文章摘要之后其他内容之前添加 HTML 注释标签 `<!--more-->`，使用方法如下图所示：
+如果你想創建文章摘要用於向讀者展示文章的核心內容，那麼需要在文章摘要之後其他內容之前添加 HTML 註釋標籤 `<!--more-->`，使用方法如下圖所示：
 
 ![https://cloud.githubusercontent.com/assets/9530963/14064341/0fa3c754-f432-11e5-8ad7-5d063d4a0886.png](https://cloud.githubusercontent.com/assets/9530963/14064341/0fa3c754-f432-11e5-8ad7-5d063d4a0886.png)
 
-## 评论插件
+## 評論插件
 
-Hexo-theme-apollo 支持两种评论插件：Disqus 和 Duoshuo. 请在 `theme/_config.yml` 文件中做如下配置:
+Hexo-theme-apollo 支持兩種評論插件：Disqus 和 Duoshuo. 請在 `theme/_config.yml` 文件中做如下配置:
 
 ```yaml
 disqus: seansun
 ```
 
-## 警告块
+## 警告塊
 
-使用警告块需要 `div` 标签和 `tip` 类名：
+使用警告塊需要 `div` 標籤和 `tip` 類名：
 
 ```html
 <div class="tip">
-    预处理器很强大，但它只是编写 CSS 的辅助工具。出于对扩展和维护等方面的考虑，在大型项目中有必要使用预处理器构建 CSS；但是对于小型项目，原生的 CSS 可能是一种更好的选择。不要肆意使用预处理器！
+    預處理器很強大，但它只是編寫 CSS 的輔助工具。出於對擴展和維護等方面的考慮，在大型項目中有必要使用預處理器構建 CSS；但是對於小型項目，原生的 CSS 可能是一種更好的選擇。不要肆意使用預處理器！
 </div>
 ```
 
 ![danger](https://cloud.githubusercontent.com/assets/9530963/11359678/489a510c-92b9-11e5-9256-341cef6999b6.png)
 
-## 图例
+## 圖例
 
-也许你已经在我的博客中看到了很多图例：流程图、草图……也许你想问它们是怎么生成的……实际上，它们是用 Microsoft Powerpoint 制作的，可能这个答案让你有点小失望，但是你还是应该尝试用它制作一下图例，你会发现它真的很适合！
+也許你已經在我的博客中看到了很多圖例：流程圖、草圖……也許你想問它們是怎么生成的……實際上，它們是用Microsoft Powerpoint 製作的，可能這個答案讓你有點小失望，但是你還是應該嘗試用它製作一下圖例，你會發現它真的很適合！
 
 ## Last but not Least
 
-专注文章内容的创作胜过博客样式的美观，祝各位玩的开心:) !
+專注文章內容的創作勝過博客樣式的美觀，祝各位玩的開心:) !

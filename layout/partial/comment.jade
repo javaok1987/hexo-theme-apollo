@@ -1,4 +1,4 @@
-if theme.duoshuo
+if theme.duoshuo && page.comments
     .ds-thread(data-thread-key=page.path, data-title=page.title, data-url=page.permalink, data-author-key='1')
     script.
         var duoshuoQuery = {short_name:"#{theme.duoshuo}"};
@@ -7,12 +7,12 @@ if theme.duoshuo
             ds.type = 'text/javascript';ds.async = true;
             ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
             ds.charset = 'UTF-8';
-            (document.getElementsByTagName('head')[0] 
+            (document.getElementsByTagName('head')[0]
              || document.getElementsByTagName('body')[0]).appendChild(ds);
         })();
 
 
-if theme.disqus
+if theme.disqus && page.comments
     #disqus_thread
     script.
         var disqus_shortname = '#{theme.disqus}';
@@ -25,3 +25,17 @@ if theme.disqus
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     script(id='dsq-count-scr' src='//#{theme.disqus}.disqus.com/count.js' async)
+
+
+if theme.cloudTie && page.comments
+    #cloud-tie-wrapper.cloud-tie-wrapper
+    script(src='https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js')
+    script.
+        var cloudTieConfig = {
+            url: document.location.href,
+            sourceId: "#{page.path}",
+            productKey: "#{theme.cloudTie}",
+            target: "cloud-tie-wrapper"
+        };
+        var yunManualLoad = true;
+        Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
