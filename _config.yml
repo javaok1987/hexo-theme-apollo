@@ -1,10 +1,12 @@
 menu:
-    首頁: /
-    所有文章: /archives/
-    分類: /categories
+    blog: /
+    about: /about
+    archives: /archives/
+    # 分類: /categories
     # 標籤: /tags
-    # GitHub: https://github.com/javaok1987
-    訂閱: /atom.xml
+    github: https://github.com/javaok1987
+    rss: /atom.xml
+
 
 favicon: /favicon.png
 logo: /favicon.png

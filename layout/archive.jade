@@ -2,7 +2,6 @@ extends partial/layout
 
 block container
     include mixins/post
-    +postList()
     .archive
         h3(class='archive-year')= '標籤雲'
         script(type='text/javascript', charset='utf-8', src='/js/tagcloud.js')
@@ -11,7 +10,7 @@ block container
             canvas#resCanvas(width='500', height='300', style='width=100%')
                 !=tagcloud()
             !=tagcloud()
-
+    +postList()
 
 block pagination
     include mixins/paginator

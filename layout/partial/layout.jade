@@ -8,8 +8,9 @@ html(lang=config.language)
                 a.logo-link(href=url_for())
                     img(src=url_for(theme.logo) alt="logo")
                 include nav
-            main.container
-                block container
+        main.container
+            block container
+        .wrap
             footer
                 block pagination
                 block copyright

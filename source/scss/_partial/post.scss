@@ -23,6 +23,22 @@
             color: white;
             background-color: #E36B6B;
         }
+        ul.tags{
+          list-style: none;
+          text-align: right;
+          li{
+            display:inline;
+            padding-right: 10px;
+            a{
+              color: #42b983;
+            }
+          }
+        }
+    }
+    .post-banner {
+      img {
+        width: 100%;
+      }
     }
 }
 
