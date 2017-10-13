@@ -1,7 +1,7 @@
 meta(charset="utf-8")
 meta(name="X-UA-Compatible", content="IE=edge")
 
-title 
+title
     block site_title
         = config.title
 block description
@@ -11,6 +11,10 @@ meta(name="viewport", content="width=device-width, initial-scale=1")
 link(rel="icon", href=url_for(theme.favicon))
 link(rel="stylesheet", href=url_for("css/apollo.css"))
 
+link(rel="apple-touch-icon", href=url_for("/images/apple-icon-60x60.png"), sizes="57x57")
+link(rel="apple-touch-icon", href=url_for("/images/apple-icon-76x76.png"), sizes="72x72")
+link(rel="apple-touch-icon", href=url_for("/images/apple-icon-120x120.png"), sizes="114x114")
+link(rel="apple-touch-icon", href=url_for("/images/apple-icon-152x152.png"), sizes="144x144")
+
 - var xml = config.url + '/atom.xml'
     link(rel="search", type="application/opensearchdescription+xml", href=xml, title=config.title)
-    

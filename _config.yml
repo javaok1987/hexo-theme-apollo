@@ -1,8 +1,8 @@
 menu:
     blog: /
-    about: /about
     archives: /archives/
-    # 分類: /categories
+    categories: /categories
+    about: /about
     # 標籤: /tags
     github: https://github.com/javaok1987
     rss: /atom.xml
