@@ -2,7 +2,7 @@ menu:
     blog: /
     archives: /archives/
     categories: /categories
-    about: /about
+    # about: /about
     # 標籤: /tags
     github: https://github.com/javaok1987
     rss: /atom.xml
