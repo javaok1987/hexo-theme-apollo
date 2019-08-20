@@ -3,7 +3,7 @@ html(lang=config.language)
     head
         include head
     body
-        if !/(about)/gi.test(page.path)
+        if !/(about|resume|cv)/gi.test(page.path)
             .wrap
                 header
                     a.logo-link(href=url_for())
@@ -11,7 +11,7 @@ html(lang=config.language)
                     include nav
         main.container
             block container
-        if !/(about)/gi.test(page.path)
+        if !/(about|resume|cv)/gi.test(page.path)
             .wrap
                 footer
                     block pagination

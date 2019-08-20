@@ -53,7 +53,8 @@ mixin post(item)
             .wrap
                 h1.post-title
                     != item.title
-                +postInfo(item)
+                if item.date.year() !== 1987
+                    +postInfo(item)
             .post-banner
                 if item.banner
                     img(src=url_for(item.banner) alt=item.title)
